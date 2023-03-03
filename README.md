@@ -3,4 +3,4 @@ O projeto consistiria na criação de uma página web com uma interface amigáve
 
 <img src="./printPage/print-page-rate.png">
 
-[Página](https://nathanrigolei.github.io/juros-compostos-calculadora/){target="_blank"}
+[Página](https://nathanrigolei.github.io/juros-compostos-calculadora/) {target="_blank"}
