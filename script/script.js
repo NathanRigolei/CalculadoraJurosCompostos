@@ -4,20 +4,20 @@ let inpMth = document.getElementById("value-mth");
 let result = document.getElementById("result");
 let valorNumerico = 0;
 
-function formatarMoeda(input) {
-  let valor = input.value.replace(/\D/g, "");
-  let formatoMoeda = new Intl.NumberFormat("pt-BR", {
+function formatMol(input) {
+  let valueMol = input.value.replace(/\D/g, "");
+  let formatMol = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
   });
-  input.value = formatoMoeda.format(valor / 100);
-  valorNumerico = parseFloat(
+  input.value = formatMol.format(valueMol / 100);
+  valueNumber = parseFloat(
     input.value.replace(/[^\d,]/g, "").replace(",", ".")
   );
 }
 
 function calc() {
-  let init = valorNumerico;
+  let init = valueNumber;
   let rate = inpRate.value / 100;
   let mth = inpMth.value;
   let juCom = init * (1 + rate) ** mth;
